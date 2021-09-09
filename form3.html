@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/CSS" href="form.css">
+    <title>Pesquisa de satisfação</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Pesquisa de satisfação</h1>
+        
+    </div>
+    
+    <form>
+        <br>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div class="campo">
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="campo">
+                <label for="numero"><strong>N&uacute;mero de Telefone</strong></stN></label>
+                <input type="tel" name="numero" id="numero" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
+                <p style="font-size: small;">formato XX-XXXXX-XXXX</p>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <br>
+            <div>
+                <legend class="text"><strong>Encontrou quais das seguintes instalações em nosso estabelecimento?</strong></legend>
+                <br>
+                <input type="checkbox" name="&Aacute;gua e caf&eacute;" value="&Aacute;gua e caf&eacute;">&Aacute;gua e caf&eacute;
+                <input type="checkbox" name="petiscos" value="petiscos">Petiscos
+                <input type="checkbox" name="banheiro" value="banheiro">Banheiro
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label for="idade"><strong>Qual a sua faixa etária?</strong></label>
+            <select id="idade" required>
+                <option selected disabled value="">Selecione</option>
+                <option value="0 a 17"> 0 a 17</option>
+                <option value="18 a 24">18 a 24</option>
+                <option value="25 a 34">25 a 34</option>
+                <option value="35 a 44">35 a 44</option>
+                <option value="45 a 54">45 a 54</option>
+                <option value="55 ou mais">55 ou mais</option>
+            </select>
+        </div>
+        <br>
+
+        <p><strong>Como classificaria nossos serviços de 1 a 5?</strong></p>
+        <br>
+        <div class="campo">
+            <label>Atendimento</label>
+            <input type="radio" name="Atendimento" id="insatisfat&oacute;rio">
+            <input type="radio" name="Atendimento" id="neutro">
+            <input type="radio" name="Atendimento" id="médio">
+            <input type="radio" name="Atendimento" id="bom">
+            <input type="radio" name="Atendimento" id="excelente">
+            <br>
+            <label>Disponibilidade</label>
+            <input type="radio" name="Disponibilidade" id="insatisfat&oacute;rio">
+            <input type="radio" name="Disponibilidade" id="neutro">
+            <input type="radio" name="Disponibilidade" id="médio">
+            <input type="radio" name="Disponibilidade" id="bom">
+            <input type="radio" name="Disponibilidade" id="excelente">
+            <br>
+            <label>Decoração</label>
+            <input type="radio" name="Decoração" id="insatisfat&oacute;rio">
+            <input type="radio" name="Decoração" id="neutro">
+            <input type="radio" name="Decoração" id="médio">
+            <input type="radio" name="Decoração" id="bom">
+            <input type="radio" name="Decoração" id="excelente">
+            <br>
+            <label>Pontualidade</label>
+            <input type="radio" name="Pontualidade" id="insatisfat&oacute;rio">
+            <input type="radio" name="Pontualidade" id="neutro">
+            <input type="radio" name="Pontualidade" id="médio">
+            <input type="radio" name="Pontualidade" id="bom">
+            <input type="radio" name="Pontualidade" id="excelente">
+            <br>
+            <label>Agilidade</label>
+            <input type="radio" name="Agilidade" id="insatisfat&oacute;rio">
+            <input type="radio" name="Agilidade" id="neutro">
+            <input type="radio" name="Agilidade" id="médio">
+            <input type="radio" name="Agilidade" id="bom">
+            <input type="radio" name="Agilidade" id="excelente">
+            <br>
+            <label>Cordialidade</label>
+            <input type="radio" name="Cordialidade" id="insatisfat&oacute;rio">
+            <input type="radio" name="Cordialidade" id="neutro">
+            <input type="radio" name="Cordialidade" id="médio">
+            <input type="radio" name="Cordialidade" id="bom">
+            <input type="radio" name="Cordialidade" id="excelente">
+            <br>
+            <label>Pagamento</label>
+            <input type="radio" name="pagamento" id="insatisfat&oacute;rio">
+            <input type="radio" name="pagamento" id="neutro">
+            <input type="radio" name="pagamento" id="médio">
+            <input type="radio" name="pagamento" id="bom">
+            <input type="radio" name="pagamento" id="excelente">
+            
+                
+        </div>
+        
+        <div class="campo">
+            <br>
+            <label for="">Sugest&otilde;es</label>
+            <br>
+            <textarea rows="6" style="width:26em" id="sugestoes" name="sugestoes"></textarea>
+        </div>
+        <br>
+        <button type="submit" class="botao">Enviar</button>
+    </form>
+    <br>
+    <br>
+</body>
+</html>
